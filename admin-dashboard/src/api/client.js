@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const client = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5001',
+    baseURL: 'https://whatsapp-tasks123.onrender.com',
 });
 
 client.interceptors.request.use((config) => {
