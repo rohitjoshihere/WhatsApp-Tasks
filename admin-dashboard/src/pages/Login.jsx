@@ -81,12 +81,24 @@ export default function Login() {
                         {loading ? 'Authenticating...' : 'Sign in'}
                     </button>
                 </form>
-                <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col items-center">
+                <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col items-center gap-2">
                     <Link
                         to="/privacy-policy"
                         className="text-slate-500 hover:text-whatsapp text-sm transition-all"
                     >
                         Privacy Policy
+                    </Link>
+                    <Link
+                        to="/terms-of-service"
+                        className="text-slate-500 hover:text-whatsapp text-sm transition-all"
+                    >
+                        Terms of Service
+                    </Link>
+                    <Link
+                        to="/data-deletion"
+                        className="text-slate-500 hover:text-red-500 text-sm transition-all"
+                    >
+                        Data Deletion
                     </Link>
                 </div>
             </div>
