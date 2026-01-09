@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import client from '../api/client';
 import { MessageSquare, Lock, Phone } from 'lucide-react';
@@ -81,6 +81,14 @@ export default function Login() {
                         {loading ? 'Authenticating...' : 'Sign in'}
                     </button>
                 </form>
+                <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col items-center">
+                    <Link
+                        to="/privacy-policy"
+                        className="text-slate-500 hover:text-whatsapp text-sm transition-all"
+                    >
+                        Privacy Policy
+                    </Link>
+                </div>
             </div>
         </div>
     );
